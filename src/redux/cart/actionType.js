@@ -1,0 +1,5 @@
+export const FIRST_ADD_TO_CART = "cart/FIRST_ADD_TO_CART";
+export const ADD_TO_CART = "cart/ADD_TO_CART";
+export const DELETE_TO_CART = "cart/DELETE_TO_CART";
+export const CART_PRODUCT_INCREMENT = "cart/CART_PRODUCT_INCREMENT";
+export const CART_PRODUCT_DECREMENT = "cart/CART_PRODUCT_DECREMENT";
