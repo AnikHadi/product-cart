@@ -20,6 +20,7 @@ const FrontPageInputForm = () => {
       quantity: parseInt(quantity),
     };
     dispatch(addProduct(productInfo));
+    e.target.reset();
   };
 
   return (
