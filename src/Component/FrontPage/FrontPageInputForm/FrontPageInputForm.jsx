@@ -16,7 +16,7 @@ const FrontPageInputForm = () => {
       productName,
       category,
       imgUrl,
-      price: parseInt(price),
+      price: Number(price),
       quantity: parseInt(quantity),
     };
     dispatch(addProduct(productInfo));
@@ -73,7 +73,7 @@ const FrontPageInputForm = () => {
               <label htmlFor="price">Price</label>
               <input
                 className="addProductInput"
-                type="number"
+                type="text"
                 id="lws-inputPrice"
                 onChange={(e) => setPrice(e.target.value)}
                 required
