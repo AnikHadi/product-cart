@@ -30,8 +30,9 @@ const cartReducer = (state = initialState, action) => {
           ? {
               ...obj,
               quantity: obj.quantity + 1,
-              totalProductPrice:
-                obj.productPrice + obj.productPrice * obj.quantity,
+              totalProductPrice: Number(
+                (obj.productPrice + obj.productPrice * obj.quantity).toFixed(2)
+              ),
             }
           : obj
       );
@@ -46,8 +47,9 @@ const cartReducer = (state = initialState, action) => {
           return {
             ...cart,
             quantity: cart.quantity + 1,
-            totalProductPrice:
-              cart.productPrice + cart.productPrice * cart.quantity,
+            totalProductPrice: Number(
+              (cart.productPrice + cart.productPrice * cart.quantity).toFixed(2)
+            ),
           };
         }
       });
@@ -60,8 +62,10 @@ const cartReducer = (state = initialState, action) => {
             return {
               ...cart,
               quantity: cart.quantity - 1,
-              totalProductPrice: Math.abs(
-                cart.productPrice - cart.productPrice * cart.quantity
+              totalProductPrice: Number(
+                Math.abs(
+                  cart.productPrice - cart.productPrice * cart.quantity
+                ).toFixed(2)
               ),
             };
           }
