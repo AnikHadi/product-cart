@@ -19,7 +19,7 @@ Please follow the below instructions to run this project in your machine:
 - Clone this repository -
 
 ```bash
-  git remote add origin https://github.com/Learn-with-Sumit/batch-2---assignment-3---product-cart-HadiAnik.git
+  git clone https://github.com/HadiAnik/product-cart.git
 ```
 
 - Go to the cloned project directory

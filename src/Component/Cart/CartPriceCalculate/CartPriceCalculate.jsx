@@ -20,7 +20,8 @@ const CartPriceCalculate = () => {
           <div className="flex items-center justify-between">
             <p>Sub Total</p>
             <p>
-              BDT <span className="lws-subtotal">{subTotalPrice}</span>
+              BDT{" "}
+              <span className="lws-subtotal">{subTotalPrice.toFixed(2)}</span>
             </p>
           </div>
           {/* <!-- Discount --> */}
@@ -41,7 +42,7 @@ const CartPriceCalculate = () => {
           <div className="flex items-center justify-between pb-4">
             <p className="font-bold">TOTAL</p>
             <p className="font-bold">
-              BDT <span className="lws-total">{subTotalPrice}</span>
+              BDT <span className="lws-total">{subTotalPrice.toFixed(2)}</span>
             </p>
           </div>
           <button className="placeOrderbtn">place order</button>
